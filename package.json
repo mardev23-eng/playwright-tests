@@ -1,0 +1,61 @@
+{
+  "name": "playwright-enterprise-tests",
+  "version": "1.0.0",
+  "description": "Enterprise Playwright testing suite for Marvin Marzon QA & SDET Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:api": "playwright test --grep @api",
+    "test:e2e": "playwright test --grep @e2e",
+    "test:parallel": "playwright test --workers=4",
+    "test:serial": "playwright test --workers=1",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:safari": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project=mobile",
+    "test:docker": "docker run --rm -v $(pwd):/tests -w /tests mcr.microsoft.com/playwright:v1.40.0-focal npm test",
+    "report": "playwright show-report",
+    "report:allure": "allure generate allure-results --clean && allure open",
+    "install:browsers": "playwright install",
+    "install:deps": "playwright install-deps",
+    "codegen": "playwright codegen",
+    "trace": "playwright show-trace",
+    "setup": "npm install && playwright install",
+    "lint": "eslint tests/ --ext .js,.ts",
+    "format": "prettier --write tests/",
+    "clean": "rm -rf test-results/ playwright-report/ allure-results/ allure-report/",
+    "ci": "npm run clean && npm run test -- --reporter=html,allure-playwright",
+    "test:load": "artillery run load-tests/load-test.yml"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "e2e",
+    "automation",
+    "qa",
+    "sdet",
+    "enterprise"
+  ],
+  "author": "Marvin Marzon",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.8.0",
+    "allure-playwright": "^2.9.0",
+    "artillery": "^2.0.0",
+    "eslint": "^8.50.0",
+    "eslint-plugin-playwright": "^0.18.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.0",
+    "faker": "^6.6.6",
+    "moment": "^2.29.4"
+  }
+}
