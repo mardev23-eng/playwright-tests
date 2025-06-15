@@ -127,7 +127,7 @@ export default defineConfig({
       name: 'api',
       testMatch: '**/api/**/*.spec.ts',
       use: {
-        baseURL: process.env.API_BASE_URL || 'https://marvinmarzon.qa/api',
+        baseURL: process.env.API_BASE_URL || 'https://marvinmarzon.netlify.app/api',
       },
     },
     
