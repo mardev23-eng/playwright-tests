@@ -188,5 +188,3 @@ export abstract class BasePage {
     return metrics;
   }
 }
-
-export { BasePage }
