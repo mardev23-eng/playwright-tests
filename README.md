@@ -1,7 +1,5 @@
 # 🎭 Playwright Testing Suite
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 > **Playwright testing framework for QA & SDET portfolio validation**
 
 Playwright testing suite demonstrating advanced end-to-end testing capabilities, cross-browser compatibility, quality assurance for [Marvin Marzon's QA & SDET Portfolio](https://marvinmarzon.netlify.app).
