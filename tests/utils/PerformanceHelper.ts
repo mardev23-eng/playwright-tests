@@ -36,8 +36,8 @@ export class PerformanceHelper {
         tcpConnection: navigation.connectEnd - navigation.connectStart,
         serverResponse: navigation.responseEnd - navigation.requestStart,
         
-        // Full page load
-        fullLoadTime: navigation.loadEventEnd - navigation.navigationStart,
+        // Full page load - use startTime instead of navigationStart
+        fullLoadTime: navigation.loadEventEnd - navigation.startTime,
       };
     });
     
