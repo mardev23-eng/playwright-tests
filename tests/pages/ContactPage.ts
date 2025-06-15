@@ -15,7 +15,7 @@ export class ContactPage extends BasePage {
   private messageTextarea: Locator;
   private submitButton: Locator;
   private successMessage: Locator;
-  private errorMessage: Locator;
+  // Remove the private errorMessage declaration since it's inherited from BasePage
   private contactInfo: Locator;
   private emailInfoButton: Locator;
   private emailInfoPanel: Locator;
@@ -31,7 +31,7 @@ export class ContactPage extends BasePage {
     this.messageTextarea = page.locator('textarea[name="message"]');
     this.submitButton = page.locator('button[type="submit"]');
     this.successMessage = page.locator('[class*="success"]');
-    this.errorMessage = page.locator('[class*="error"]');
+    // errorMessage is inherited from BasePage as protected
     this.contactInfo = page.locator('[class*="contact-info"]');
     this.emailInfoButton = page.locator('button[title*="Email delivery"]');
     this.emailInfoPanel = page.locator('[class*="blue-50"]');
