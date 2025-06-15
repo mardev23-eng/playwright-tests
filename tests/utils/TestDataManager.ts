@@ -11,7 +11,7 @@ export class TestDataManager {
    */
   generateContactFormData() {
     return {
-      name: faker.name.fullName(),
+      name: faker.person.fullName(),
       email: faker.internet.email(),
       subject: faker.helpers.arrayElement([
         'Job Opportunity',
