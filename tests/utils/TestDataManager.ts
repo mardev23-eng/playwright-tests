@@ -208,7 +208,7 @@ export class TestDataManager {
   generateEnvironmentData() {
     return {
       development: {
-        baseUrl: 'http://localhost:5173',
+        baseUrl: 'https://staging-marvinmarzon.netlify.app',
         timeout: 10000,
         retries: 0
       },
@@ -218,7 +218,7 @@ export class TestDataManager {
         retries: 1
       },
       production: {
-        baseUrl: 'https://marvinmarzon.qa',
+        baseUrl: 'https://staging-marvinmarzon.netlify.app',
         timeout: 30000,
         retries: 2
       }
