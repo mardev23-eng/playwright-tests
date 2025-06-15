@@ -208,17 +208,17 @@ export class TestDataManager {
   generateEnvironmentData() {
     return {
       development: {
-        baseUrl: 'https://staging-marvinmarzon.netlify.app',
+        baseUrl: 'https://marvinmarzon.netlify.app',
         timeout: 10000,
         retries: 0
       },
       staging: {
-        baseUrl: 'https://staging-marvinmarzon.netlify.app',
+        baseUrl: 'https://marvinmarzon.netlify.app',
         timeout: 15000,
         retries: 1
       },
       production: {
-        baseUrl: 'https://staging-marvinmarzon.netlify.app',
+        baseUrl: 'https://marvinmarzon.netlify.app',
         timeout: 30000,
         retries: 2
       }
