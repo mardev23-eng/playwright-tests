@@ -308,7 +308,7 @@ await expect(element).toBeResponsive();
 **Marvin Marzon** - QA & SDET
 - 📧 **Email**: marvinmarzon@outlook.com
 - 💼 **LinkedIn**: [Marvin Marzon](https://www.linkedin.com/in/marvin-marzon-615400170/)
-- 🌐 **Portfolio**: [https://marvinmarzon.qa](https://marvinmarzon.qa)
+- 🌐 **Portfolio**: [https://marvinmarzon.netlify.app](https://marvinmarzon.qa)
 
 ## 📄 License
 
