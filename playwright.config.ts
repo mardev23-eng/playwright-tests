@@ -154,11 +154,6 @@ export default defineConfig({
   // Output directory for test artifacts
   outputDir: 'test-results/',
   
-  // Web server configuration for local development
-  webServer: process.env.CI ? undefined : {
-    command: 'npm run dev',
-    port: 5173,
-    reuseExistingServer: !process.env.CI,
-    timeout: 120 * 1000,
-  },
+  // Remove web server configuration since we're testing against deployed app
+  // webServer: undefined,
 });

@@ -33,7 +33,7 @@ async function globalSetup(config: FullConfig) {
   
   try {
     // Basic connectivity check
-    await page.goto(process.env.BASE_URL || 'https://marvinmarzon.qa', {
+    await page.goto(process.env.BASE_URL || 'https://marvinmarzon.netlify.app', {
       waitUntil: 'networkidle',
       timeout: 30000,
     });
