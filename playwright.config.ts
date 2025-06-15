@@ -46,7 +46,7 @@ export default defineConfig({
   // Shared settings for all tests
   use: {
     // Base URL for tests
-    baseURL: process.env.BASE_URL || 'https://marvinmarzon.qa',
+    baseURL: process.env.BASE_URL || 'https://marvinmarzon.netlify.app',
     
     // Browser context options
     viewport: { width: 1280, height: 720 },
