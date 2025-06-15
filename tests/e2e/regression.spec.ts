@@ -34,7 +34,7 @@ test.describe('Regression Tests - Full Feature Coverage', () => {
       await homePage.verifySocialLinks();
       
       // Verify external link attributes
-      const githubLink = homePage.page.locator('a[aria-label="GitHub"]');
+      const githubLink = homePage.getPage().locator('a[aria-label="GitHub"]');
       await expect(githubLink).toHaveAttribute('rel', 'noopener noreferrer');
     });
   });
