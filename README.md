@@ -4,7 +4,7 @@
 
 > **Playwright testing framework for QA & SDET portfolio validation**
 
-Playwright testing suite demonstrating advanced end-to-end testing capabilities, cross-browser compatibility, quality assurance for [Marvin Marzon's QA & SDET Portfolio](https://marvinmarzon.qa).
+Playwright testing suite demonstrating advanced end-to-end testing capabilities, cross-browser compatibility, quality assurance for [Marvin Marzon's QA & SDET Portfolio](https://marvinmarzon.netlify.app).
 
 ## 🎯 Overview
 
@@ -254,9 +254,9 @@ npm run report:allure
 ```typescript
 // Multi-environment support
 const environments = {
-  development: { baseURL: 'http://localhost:5173' },
-  staging: { baseURL: 'https://staging.marvinmarzon.qa' },
-  production: { baseURL: 'https://marvinmarzon.qa' }
+  development: { baseURL: 'https://marvinmarzon.netlify.app' },
+  staging: { baseURL: 'https://marvinmarzon.netlify.app' },
+  production: { baseURL: 'https://marvinmarzon.netlify.app' }
 };
 ```
 
@@ -308,7 +308,7 @@ await expect(element).toBeResponsive();
 **Marvin Marzon** - QA & SDET
 - 📧 **Email**: marvinmarzon@outlook.com
 - 💼 **LinkedIn**: [Marvin Marzon](https://www.linkedin.com/in/marvin-marzon-615400170/)
-- 🌐 **Portfolio**: [https://marvinmarzon.netlify.app](https://marvinmarzon.qa)
+- 🌐 **Portfolio**: [https://marvinmarzon.netlify.app](https://marvinmarzon.netlify.app)
 
 ## 📄 License
 
@@ -322,7 +322,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 *Demonstrating professional QA engineering capabilities through comprehensive end-to-end testing*
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue?style=for-the-badge)](https://marvinmarzon.qa)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue?style=for-the-badge)](https://marvinmarzon.netlify.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/marvin-marzon-615400170/)
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:marvinmarzon@outlook.com)
 
