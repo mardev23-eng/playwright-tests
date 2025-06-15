@@ -33,6 +33,13 @@ export class HomePage extends BasePage {
   }
   
   /**
+   * Get the page instance for direct access when needed
+   */
+  getPage(): Page {
+    return this.page;
+  }
+  
+  /**
    * Navigate to home page
    */
   async navigateToHome() {

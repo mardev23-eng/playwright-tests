@@ -16,7 +16,7 @@ test.describe('Smoke Tests - Critical User Journeys', () => {
     await homePage.verifyNavigation();
     
     // Verify page title
-    await expect(homePage.page).toHaveTitle(/Marvin Marzon/);
+    await expect(homePage.getPage()).toHaveTitle(/Marvin Marzon/);
     
     // Verify key elements are visible
     await homePage.verifyCTAButtons();
@@ -35,7 +35,7 @@ test.describe('Smoke Tests - Critical User Journeys', () => {
       expect(homePage.getCurrentUrl()).toContain(`#${section.toLowerCase()}`);
       
       // Wait for smooth scroll to complete
-      await homePage.page.waitForTimeout(1000);
+      await homePage.getPage().waitForTimeout(1000);
     }
   });
 
@@ -77,10 +77,10 @@ test.describe('Smoke Tests - Critical User Journeys', () => {
     await accessibility.checkBasicCompliance();
     
     // Verify heading structure
-    await expect(homePage.page.locator('h1')).toBeVisible();
+    await expect(homePage.getPage().locator('h1')).toBeVisible();
     
     // Verify alt text on images
-    const images = homePage.page.locator('img');
+    const images = homePage.getPage().locator('img');
     const imageCount = await images.count();
     
     for (let i = 0; i < imageCount; i++) {
@@ -91,8 +91,8 @@ test.describe('Smoke Tests - Critical User Journeys', () => {
 
   test('External links work correctly @smoke @links', async ({ homePage }) => {
     // Test social media links
-    const githubLink = homePage.page.locator('a[aria-label="GitHub"]');
-    const linkedinLink = homePage.page.locator('a[aria-label="LinkedIn"]');
+    const githubLink = homePage.getPage().locator('a[aria-label="GitHub"]');
+    const linkedinLink = homePage.getPage().locator('a[aria-label="LinkedIn"]');
     
     // Verify links have correct attributes
     await expect(githubLink).toHaveAttribute('href', /github/);
