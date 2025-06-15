@@ -7,17 +7,11 @@ import { BasePage } from './BasePage';
  */
 export class AboutPage extends BasePage {
   private aboutSection: Locator;
-  private professionalStats: Locator;
-  private techStack: Locator;
-  private achievements: Locator;
   
   constructor(page: Page) {
     super(page);
     
     this.aboutSection = page.locator('#about');
-    this.professionalStats = page.locator('[data-testid="professional-stats"]');
-    this.techStack = page.locator('[data-testid="tech-stack"]');
-    this.achievements = page.locator('[data-testid="achievements"]');
   }
   
   /**

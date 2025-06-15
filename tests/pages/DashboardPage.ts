@@ -7,15 +7,11 @@ import { BasePage } from './BasePage';
  */
 export class DashboardPage extends BasePage {
   private dashboardSection: Locator;
-  private metrics: Locator;
-  private charts: Locator;
   
   constructor(page: Page) {
     super(page);
     
     this.dashboardSection = page.locator('#dashboard');
-    this.metrics = page.locator('[data-testid="metrics"]');
-    this.charts = page.locator('[data-testid="charts"]');
   }
   
   /**

@@ -15,7 +15,6 @@ export class ContactPage extends BasePage {
   private messageTextarea: Locator;
   private submitButton: Locator;
   private successMessage: Locator;
-  // Remove the private errorMessage declaration since it's inherited from BasePage
   private contactInfo: Locator;
   private emailInfoButton: Locator;
   private emailInfoPanel: Locator;

@@ -7,15 +7,11 @@ import { BasePage } from './BasePage';
  */
 export class GitHubPage extends BasePage {
   private githubSection: Locator;
-  private repositories: Locator;
-  private repositoryFilters: Locator;
   
   constructor(page: Page) {
     super(page);
     
     this.githubSection = page.locator('#github');
-    this.repositories = page.locator('[data-testid="repository"]');
-    this.repositoryFilters = page.locator('[data-testid="repo-filters"]');
   }
   
   /**

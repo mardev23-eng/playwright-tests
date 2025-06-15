@@ -7,15 +7,11 @@ import { BasePage } from './BasePage';
  */
 export class SkillsPage extends BasePage {
   private skillsSection: Locator;
-  private skillFilters: Locator;
-  private skillItems: Locator;
   
   constructor(page: Page) {
     super(page);
     
     this.skillsSection = page.locator('#skills');
-    this.skillFilters = page.locator('[data-testid="skill-filters"]');
-    this.skillItems = page.locator('[data-testid="skill-item"]');
   }
   
   /**

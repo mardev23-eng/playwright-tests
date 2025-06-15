@@ -11,9 +11,6 @@ export class HomePage extends BasePage {
   private heroTitle: Locator;
   private heroSubtitle: Locator;
   private ctaButtons: Locator;
-  private skillsBadges: Locator;
-  private socialLinks: Locator;
-  private scrollIndicator: Locator;
   private navigationMenu: Locator;
   private themeToggle: Locator;
   
@@ -25,9 +22,6 @@ export class HomePage extends BasePage {
     this.heroTitle = page.locator('h1').first();
     this.heroSubtitle = page.locator('p').first();
     this.ctaButtons = page.locator('.btn-primary, .btn-outline');
-    this.skillsBadges = page.locator('[class*="badge"]');
-    this.socialLinks = page.locator('a[aria-label*="GitHub"], a[aria-label*="LinkedIn"]');
-    this.scrollIndicator = page.locator('[class*="animate-bounce"]');
     this.navigationMenu = page.locator('nav ul');
     this.themeToggle = page.locator('button[aria-label*="Toggle"]');
   }
@@ -175,8 +169,9 @@ export class HomePage extends BasePage {
    * Verify scroll indicator
    */
   async verifyScrollIndicator() {
-    await expect(this.scrollIndicator).toBeVisible();
-    await expect(this.scrollIndicator).toHaveClass(/animate-bounce/);
+    const scrollIndicator = this.page.locator('[class*="animate-bounce"]');
+    await expect(scrollIndicator).toBeVisible();
+    await expect(scrollIndicator).toHaveClass(/animate-bounce/);
   }
   
   /**
