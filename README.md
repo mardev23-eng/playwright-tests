@@ -1,6 +1,5 @@
 # 🎭 Playwright Testing Suite
 
-[![Playwright Tests](https://github.com/marvin-marzon/playwright-tests/actions/workflows/playwright.yml/badge.svg)](https://github.com/marvin-marzon/playwright-tests/actions/workflows/playwright.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > **Playwright testing framework for QA & SDET portfolio validation**
