@@ -111,6 +111,12 @@ temp/
 # Test Results
 test-results/
 
+# Playwright Reports
+playwright-report/
+
+# Allure reports
+allure-results/
+
 # End of https://www.gitignore.io/api/node
 
 package-lock.json
