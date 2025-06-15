@@ -1,4 +1,4 @@
-import { faker } from 'faker';
+import { faker } from '@faker-js/faker';
 
 /**
  * Test Data Manager
@@ -196,8 +196,8 @@ export class TestDataManager {
    */
   generateNetworkDelay() {
     return {
-      fast: faker.datatype.number({ min: 50, max: 200 }),
-      slow: faker.datatype.number({ min: 1000, max: 3000 }),
+      fast: faker.number.int({ min: 50, max: 200 }),
+      slow: faker.number.int({ min: 1000, max: 3000 }),
       offline: 0
     };
   }

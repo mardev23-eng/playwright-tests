@@ -213,7 +213,7 @@ export class PerformanceHelper {
    * Generate performance recommendations
    */
   private generateRecommendations(pageLoad: any, resources: any, js: any, css: any, images: any) {
-    const recommendations = [];
+    const recommendations: string[] = [];
     
     // Page load recommendations
     if (pageLoad.fullLoadTime > 3000) {

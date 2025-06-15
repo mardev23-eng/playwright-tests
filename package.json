@@ -44,6 +44,7 @@
   "author": "Marvin Marzon",
   "license": "MIT",
   "devDependencies": {
+    "@faker-js/faker": "^9.8.0",
     "@playwright/test": "^1.40.0",
     "@types/node": "^20.8.0",
     "allure-playwright": "^2.9.0",

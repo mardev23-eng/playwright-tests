@@ -219,7 +219,8 @@ export class AccessibilityHelper {
     
     // Check for navigation landmark
     const nav = this.page.locator('nav, [role="navigation"]');
-    await expect(nav).toHaveCountGreaterThan(0);
+    const navCount = await nav.count();
+    expect(navCount).toBeGreaterThan(0);
     
     // Check for banner (header)
     const header = this.page.locator('header, [role="banner"]');
